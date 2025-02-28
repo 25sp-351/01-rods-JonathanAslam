@@ -4,9 +4,9 @@
 - Cutting Lengths: (3, 5), (4, 11), (1, 1)
 
 ## Output: 
-- Cuts made: 5 @ 4 = 55.0
+- 5 @ 4 = 55.0
 - Remainder: 0
-- Total Value: 55
+- Value: 55
 
 
 # TestCase 2 : avoid cutting rod to negative length when given too long of a input
@@ -15,9 +15,8 @@
 - Cutting Lengths: (11, 1)
 
 ## Output: 
-- Cuts Made: 0 @ 0 = 0.0
 - Remainder: 10
-- Total Value: 0
+- Value: 0
 
 
 # TestCase 3 : avoid dealing with negative lengths or values
@@ -25,15 +24,15 @@
 - Rod Length: 10
 - Cutting Lengths: (-1, 1), (1, -1), (1, 1)
 
-## Output:
+## Output: NOTE: this ignores the negatives and does not save them to the array of lengths_value pairs, does not stop taking inputs but continues until user enters 'ctrl + d'
 - For value: (-1, 1):
-    - "Please enter a valid, non-negative length and value"
+    - "Cannot compute a negative, please try again"
 - For value: (1, -1):
-    - "Please enter a valid, non-negative length and value"
+    - "Cannot compute a negative, please try again"
 - For value: (1, 1):
     - Cuts Made: 10 @ 1 = 10.0
     - Remainder: 0
-    - Total Value: 10.0
+    - Value: 10
 
 
 # TestCase 4 : cant cut perfectly
@@ -42,9 +41,9 @@
 - Cutting Lengths: (11, 30), (3, 6), (2, 2)
 
 ## Output:
-- Cuts Made: 1 @ 11 = 30.0
-- Cuts Made: 3 @ 3 = 18.0
+- 1 @ 11 = 30.0
+- 3 @ 3 = 18.0
 - Remainder: 1
-- Total Value: 48.0
+- Value: 48
 
 
